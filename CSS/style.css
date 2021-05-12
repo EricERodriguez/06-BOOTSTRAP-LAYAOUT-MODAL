@@ -1,0 +1,10 @@
+#columna{
+    display: flex;
+    align-items: center;
+}
+
+#ButtomReg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
