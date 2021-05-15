@@ -18,14 +18,15 @@
   <!-- ================
             script necesario para mostrar de una el modal
   ==================== -->
-  <script>
+  <div id="modalsc">
+    <script >
       $(document).ready(function()
       {
         $("#mostrarmodal").modal("show");
       });
-  </script>
-  
-  </style>
+    </script>
+  </div>
+
 
 </head>
 
@@ -33,25 +34,26 @@
 
   <div class="modal" tabindex="-1" role="dialog" id="mostrarmodal">
     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="btnClose">
-            <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true" id="laX">&times;</span>
     </button>
     <div class="modal-dialog" role="document" id="modalDialog">
       <!-- <div class="modal-content"> -->
         <div class="modal-header">
 
+    
           <h5 class="modal-title" id="textShadow">Utilizar mascarilla, salva vidas!</h5>
 
         </div>
         <img src="/asset/image/covid-19-cartel-icono-virus_1142-7401.png" alt="" id="icoCovid">
         <div class="modal-body" id="modalBody">
           <p id="textShadow">Para evitar la propagación de la <b>COVID-19:</b></p>
-          
+
 
           <ul id="textShadow">
-            <li>Para evitar la propagación de la COVID-19:</li>
             <li>Mantén una distancia de seguridad con personas que tosan o estornuden.</li>
             <li>Utiliza mascarilla cuando no sea posible mantener el distanciamiento físico.</li>
             <li>No te toques los ojos, la nariz ni la boca.</li>
+            <li>Si no te encuentras bien, quédate en casa.</li>
           </ul>
         </div>
         <div class="modal-footer">
