@@ -91,6 +91,20 @@
     border: 2px solid rgba(55, 160, 209, 0.527);
 }
 
+
+#mapGoogle{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.containerContact{
+    background-color: rgba(109, 188, 224, 0.699);
+    border-radius: 10px;
+    margin: 40px;
+    padding: 10px;
+}
+
 @media screen and (min-width: 550px) {
     #mostrarmodal {
         background-color:rgba(116, 231, 231, 0.863);
