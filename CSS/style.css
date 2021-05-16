@@ -88,7 +88,7 @@
     width:100px;
     height:100px;
     border-radius: 50%;
-    border: 5px solid rgba(55, 160, 209, 0.527);
+    border: 2px solid rgba(55, 160, 209, 0.527);
 }
 
 @media screen and (min-width: 550px) {
