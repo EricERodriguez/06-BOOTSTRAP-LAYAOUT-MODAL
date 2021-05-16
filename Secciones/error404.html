@@ -13,7 +13,15 @@
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <!-- ================
+
+    <!-- ================
+              fas fa ico         
+    ==================== -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <!-- ================
                     favicon
           ==================== -->
 
@@ -201,7 +209,7 @@
 
   </header>
 
-
+<main>
   <div class="error">
         <p class="p404">404</p>
         <p>La pagina esta en construccion</p>
@@ -211,16 +219,54 @@
   <!-- ================
             Video error 404         
   ==================== -->
-  <div class="VideoError">
+
+  <div class="container"><div class="VideoError">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+</div>
+  
+</main>
   
 
   
-  
+
         <!-- ================
                   Script para que se abra el boton de ingresar
         ==================== -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
   </body>
+  <footer class="mt-5 bg-dark py-2 text-light">
+    <div class="row no-gutters">
+      <div class="col-sm-12 col-md-4 text-center pt-5">
+        <h5>Seguinos en:</h5>
+        <a href="/Secciones/error404.html"><i class="fab fa-linkedin"></i></a>
+        <a href="/Secciones/error404.html"><i class="fab fa-facebook"></i></a>
+        <a href="/Secciones/error404.html"><i class="fab fa-instagram"></i></a>
+        <a href="/Secciones/error404.html"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+      <div class="col-sm-12 col-md-4 text-center pt-1">
+        <img src="/asset/logo/Logo.png"  width="150px" height="150px">
+        <p>RollingCode</p>
+        <hr>
+      </div>
+      <div class="container col-sm-12 col-md-4 text-center pt-5">
+        <ul class="pr-5">
+          <h5>Unite a nosotros!</h5>
+          <form action="actions/email.php" method="POST">
+            <div>
+              <input class="my-2" type="email" placeholder="name@example.com" name="email" required="">
+              <button type="submit" class="btn-success" style="background-color: rgba(0, 255, 255, 0.644);">Enviar</button>
+            </div>
+          </form>
+          <p class="p-3">Dejanos tu mail, asi podemos avisarte de todas las noticias</p>
+        </ul>
+      </div>
+    </div>
+    <div class="row text-center no-gutters">
+      <div class="col-sm-12">
+        <p>&copy;All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
   </html>

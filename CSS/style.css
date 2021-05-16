@@ -111,17 +111,19 @@
     font-size: 150px;
 }
 .VideoError{
-    display: flex;
+    display: flexbox;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width:600px;
-    height:100px;
-    
+    align-items: center;
     border: 0px solid rgba(55, 160, 209, 0.527);
 }
 
 
+
+i {
+    font-size: 50px;
+}
 /*------------------
 /*--------mediaquery---------
 ------------------*/
