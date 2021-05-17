@@ -14,6 +14,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
+
     <!-- ================
               fas fa ico
     ==================== -->
@@ -46,40 +47,7 @@
   </head>
 
 <body>
-  <!-- ================
-            Popup
-  ==================== -->
-  <div class="modal" tabindex="-1" role="dialog" id="mostrarmodal">
-    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="btnClose">
-            <span aria-hidden="true" id="laX">&times;</span>
-    </button>
-    <div class="modal-dialog" role="document" id="modalDialog">
-      <!-- <div class="modal-content"> -->
-        <div class="modal-header">
-
-    
-          <h5 class="modal-title" id="textShadow">Utilizar mascarilla, salva vidas!</h5>
-
-        </div>
-        <img src="/asset/image/covid-19-cartel-icono-virus_1142-7401.png" alt="" id="icoCovid">
-        <div class="modal-body" id="modalBody">
-          <p id="textShadow">Para evitar la propagación de la <b>COVID-19:</b></p>
-
-
-          <ul id="textShadow">
-            <li>Mantén una distancia de seguridad con personas que tosan o estornuden.</li>
-            <li>Utiliza mascarilla cuando no sea posible mantener el distanciamiento físico.</li>
-            <li>No te toques los ojos, la nariz ni la boca.</li>
-            <li>Si no te encuentras bien, quédate en casa.</li>
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-primary">Save changes</button>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <!-- ================
             navBar
@@ -141,8 +109,20 @@
                   <label class="form-check-label" for="exampleCheck1">Recordad E-mail</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Entrar</button>
+                <div>
+                  <button class="loginBtn loginBtn--facebook">
+                  Entrar con Facebook
+                </button>
+                <button class="loginBtn loginBtn--google">
+                  Entrar con Google
+                </button>
+                </div>
+                
               </form>
+
+              <p><a href="/Secciones/recup.html">Recuperar la contraseña</a></p>
             </div>
+            
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
@@ -221,7 +201,7 @@
   ==================== -->
 
   <div class="container"><div class="VideoError">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videoYoutube"></iframe>
   </div>
 </div>
   
