@@ -1,5 +1,17 @@
 
+/*------------------
+/*--------global nav bar---------
+------------------*/
 
+.modal-backdrop{
+    display: none;
+}
+
+#headers {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 /*------------------
 /*--------About US---------
 ------------------*/
@@ -98,6 +110,7 @@
 /*------------------
 /*--------Pagina error 404---------
 ------------------*/
+/* Style the header */
 
 .error {
     margin-left: auto;
