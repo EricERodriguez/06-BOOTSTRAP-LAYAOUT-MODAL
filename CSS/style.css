@@ -237,6 +237,17 @@ i {
     font-size: 50px;
 }
 /*------------------
+/*-------- cartilla---------
+------------------*/
+#hr {
+    margin: 3px;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: 0.25;
+    border-top: 10px solid red;
+}
+/*------------------
 /*--------mediaquery---------
 ------------------*/
 @media screen and (min-width: 550px) {
