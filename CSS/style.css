@@ -239,14 +239,54 @@ i {
 /*------------------
 /*-------- cartilla---------
 ------------------*/
+#fila1{
+    position: sticky;
+    top: 12%;
+    z-index: 100;
+    background-color: slategray;
+}
+#fila2{
+    position: sticky;
+    top: 12%;
+    z-index: 100;
+    background-color: slategray;
+}
+#fila3{
+    position: sticky;
+    top: 12%;
+    z-index: 100;
+    background-color: slategray;
+}
+#fila4{
+    position: sticky;
+    top: 12%;
+    z-index: 100;
+    background-color: slategray;
+}
+#fila5{
+    position: sticky;
+    top: 12%;
+    z-index: 100;
+    background-color: slategray;
+}
+thead {
+    display: contents;
+    color: #FFF;
+    text-align: center;
+}
+tbody{
+    color: rgb(126, 192, 236);
+    background-color: #081331d0;
+}
 #hr {
+    display: flex;
     margin: 3px;
     color: inherit;
     background-color: currentColor;
     border: 0;
     opacity: 0.25;
     border-top: 10px solid red;
-}
+} 
 /*------------------
 /*--------mediaquery---------
 ------------------*/
@@ -291,5 +331,14 @@ i {
             text-align: center;
             align-items: center;
             width: 100%;
+        }
+        .column-2 {
+            display: none;
+        }
+        .column-5 {
+            display: none;
+        }
+        .column-3 {
+            display: none;
         }
 }
