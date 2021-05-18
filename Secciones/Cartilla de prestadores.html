@@ -1,51 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Header</title>
-	<link rel="stylesheet" href="/ASSET/CSS/bootstrap.css">
-</head>
+
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Centro Medico - RollingCode</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+      <link rel="stylesheet" href="/CSS/style.css">
+      <link rel="stylesheet" href="/CSS/bootstrap.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+    <!-- ================
+              fas fa ico         
+    ==================== -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <!-- ================
+                    favicon
+          ==================== -->
+
+          <link rel="shortcut icon" href="/asset/logo/Logo.png">
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- ================
+              script necesario para mostrar de una el modal
+    ==================== -->
+    <div id="modalsc">
+      <script >
+        $(document).ready(function()
+        {
+          $("#mostrarmodal").modal("show");
+        });
+      </script>
+    </div>
+  </head>
 
 <body>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#"><img src="/ASSET/IMG/logo-centro.png" width="100px" height="100px"
-						alt="logo">
-					RollingCode</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
-					aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+  <!-- ================
+            Popup
+  ==================== -->
+  <div class="modal" tabindex="-1" role="dialog" id="mostrarmodal">
+    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="btnClose">
+            <span aria-hidden="true" id="laX">&times;</span>
+    </button>
+    <div class="modal-dialog" role="document" id="modalDialog">
+      <!-- <div class="modal-content"> -->
+        <div class="modal-header">
 
-				<div class="collapse navbar-collapse" id="navbarColor03">
-					<ul class="navbar-nav me-auto">
-						<li class="nav-item btn btn-primary">
-							<a class="nav-link active" href="#">Inicio
-								<span class="visually-hidden">(current)</span>
-							</a>
-						</li>
-						<li class="nav-item btn btn-primary">
-							<a class="nav-link" href="#">Cartilla</a>
-						</li>
-						<li class="nav-item btn btn-primary">
-							<a class="nav-link" href="#">Acerca de</a>
-						</li>
-						<li class="nav-item btn btn-primary">
-							<a class="nav-link" href="#">Noticias</a>
-						</li>
-					</ul>
-					<div class="m-2 d-flex flex-row justify-content-around">
-						<a href="#" class="btn btn-outline-danger btn- mr-1 border border-dark">Ingresar</a>
-						<a href="#" data-toggle="modal" data-target="#exampleModal"
-							class="btn btn-outline-danger mr-1 border border-dark">Regístrate</a>
-					</div>
-				</div>
-			</div>
-		</nav>
+    
+          <h5 class="modal-title" id="textShadow">Utilizar mascarilla, salva vidas!</h5>
+
+        </div>
+        <img src="/asset/image/covid-19-cartel-icono-virus_1142-7401.png" alt="" id="icoCovid">
+        <div class="modal-body" id="modalBody">
+          <p id="textShadow">Para evitar la propagación de la <b>COVID-19:</b></p>
+
+
+          <ul id="textShadow">
+            <li>Mantén una distancia de seguridad con personas que tosan o estornuden.</li>
+            <li>Utiliza mascarilla cuando no sea posible mantener el distanciamiento físico.</li>
+            <li>No te toques los ojos, la nariz ni la boca.</li>
+            <li>Si no te encuentras bien, quédate en casa.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================
+            navBar
+  ==================== -->
+  <header  id="headers">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><img src="/asset/logo/logo-centro.png" width="80px" height="80px" alt="logo"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item btn btn-primary">
+              <a class="nav-link active" href="/index.html">Inicio
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item btn btn-primary">
+              <a class="nav-link" href="/Secciones/Cartilla de prestadores.html">Cartilla</a>
+            </li>
+            <li class="nav-item btn btn-primary">
+              <a class="nav-link" href="/Secciones/AboutUs.html">Acerca de</a>
+            </li>
+            <li class="nav-item btn btn-primary">
+              <a class="nav-link" href="/Secciones/Noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item btn btn-primary">
+              <a class="nav-link" href="/Secciones/contact.html">Contacto</a>
+            </li>
+          </ul>
+          <div class="m-2 d-flex flex-row justify-content-around">
+
+            <!-- ================
+                      ingresar         
+            ==================== -->
+      <button type="button" class="btn btn-outline-danger mr-1 border border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" id="ButtomIng">Ingresar</button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Centro Medico - RollingCode</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Direccion de E-Mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más. </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Recordad E-mail</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+                <div>
+                  <button class="loginBtn loginBtn--facebook">
+                  Entrar con Facebook
+                </button>
+                <button class="loginBtn loginBtn--google">
+                  Entrar con Google
+                </button>
+                </div>
+              </form>
+
+                    <p><a href="/Secciones/recup.html">Recuperar la contraseña</a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+          <!-- ================
+                    Registrar         
+          ==================== -->
+            <a type="button" data-bs-toggle="modal" data-bs-target="#registrarModal" class="btn btn-outline-danger mr-1 border border-dark" data-bs-whatever="@mdo" id="ButtomReg">Regístrate</a>
+            <div class="modal fade" id="registrarModal" tabindex="-1" aria-labelledby="registrarModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="registrarModalLabel">Centro Medico - RollingCode</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="row">
+                        <div class="col">
+                          <label for="registrarInputEmail1" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                          <label for="registrarInputEmail1" class="form-label">Apellido</label>
+                          <input type="text" class="form-control" placeholder="Apellido">
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="registrarInputEmail1" class="form-label">Direccion de E-Mail</label>
+                        <input type="email" class="form-control" id="registrarInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más. </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="registrarInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="registrarInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="registrarInputPassword1" class="form-label">Confirmar contraseña</label>
+                        <input type="password" class="form-control" id="registrarInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="registrarCheck1">
+                        <label class="form-check-label" for="registrarCheck1">Aceptar términos y condiciones</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">registrarse</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
 
 		<hr>
 
@@ -4139,48 +4310,54 @@
 
 					</div>
 				</div>
-<!--Footer inicio -->
-				<footer class="mt-5 bg-dark py-2 text-light">
-					<div class="row no-gutters">
-						<div class="col-sm-12 col-md-4 text-center pt-5">
-							<h5>Seguinos en:</h5>
-							<a href="/Secciones/error404.html"><i class="fab fa-linkedin"></i></a>
-							<a href="/Secciones/error404.html"><i class="fab fa-facebook"></i></a>
-							<a href="/Secciones/error404.html"><i class="fab fa-instagram"></i></a>
-							<a href="/Secciones/error404.html"><i class="fab fa-whatsapp"></i></a>
-						</div>
+            <!-- ================
+                    Script con dia y hora de hoy
+          ==================== -->
+          <div>
+            <script type="text/javascript" > var d = new Date(); document.write(d.getDate() + "/" + (d.getMonth() +1) + "/" + d.getFullYear(), ', '+d.getHours(),':'+d.getMinutes(),':'+d.getSeconds()); </script>
+          </div>
+        </div>
+  
+  
+        <!-- ================
+                  Script para que se abra el boton de ingresar
+        ==================== -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </body>
+  
+      <footer class="mt-5 bg-dark py-2 text-light">
+        <div class="row no-gutters">
+          <div class="col-sm-12 col-md-4 text-center pt-5">
+            <h5>Seguinos en:</h5>
+            <a href="/Secciones/error404.html"><i class="fab fa-linkedin"></i></a>
+            <a href="/Secciones/error404.html"><i class="fab fa-facebook"></i></a>
+            <a href="/Secciones/error404.html"><i class="fab fa-instagram"></i></a>
+            <a href="/Secciones/error404.html"><i class="fab fa-whatsapp"></i></a>
+          </div>
 
-						<div class="col-sm-12 col-md-4 text-center pt-1">
-							<img src="/asset/logo/Logo.png" width="150px" height="150px">
-							<p>RollingCode</p>
-							<hr>
-						</div>
-						<div class="container col-sm-12 col-md-4 text-center pt-5">
-							<ul class="pr-5">
-								<h5>Unite a nosotros!</h5>
-								<form action="actions/email.php" method="POST">
-									<div>
-										<input class="my-2" type="email" placeholder="name@example.com" name="email"
-											required="">
-										<button type="submit" class="btn-success"
-											style="background-color: rgba(0, 255, 255, 0.644);">Enviar</button>
-									</div>
-								</form>
-								<p class="p-3">Dejanos tu mail, asi podemos avisarte de todas las noticias</p>
-							</ul>
-						</div>
-					</div>
-					<div class="row text-center no-gutters">
-						<div class="col-sm-12">
-							<p>&copy;All Rights Reserved</p>
-						</div>
-					</div>
-				</footer>
-<!--Finalizacion de Footer-->
-	</header>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-		crossorigin="anonymous"></script>
-</body>
-
-</html>
+          <div class="col-sm-12 col-md-4 text-center pt-1">
+            <img src="/asset/logo/Logo.png"  width="150px" height="150px">
+            <p>RollingCode</p>
+            <hr>
+          </div>
+          <div class="container col-sm-12 col-md-4 text-center pt-5">
+            <ul class="pr-5">
+              <h5>Unite a nosotros!</h5>
+              <form action="actions/email.php" method="POST">
+                <div>
+                  <input class="my-2" type="email" placeholder="name@example.com" name="email" required="">
+                  <button type="submit" class="btn-success" style="background-color: rgba(0, 255, 255, 0.644);">Enviar</button>
+                </div>
+              </form>
+              <p class="p-3">Dejanos tu mail, asi podemos avisarte de todas las noticias</p>
+            </ul>
+          </div>
+        </div>
+        <div class="row text-center no-gutters">
+          <div class="col-sm-12">
+            <p>&copy;All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+  
+  </html>
