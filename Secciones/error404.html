@@ -16,13 +16,11 @@
 
 
     <!-- ================
-              fas fa ico
+              fas fa ico         
     ==================== -->
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-
-    <!-- ================
+      <!-- ================
                     favicon
           ==================== -->
 
@@ -47,23 +45,56 @@
   </head>
 
 <body>
-  
+  <!-- ================
+            Popup
+  ==================== -->
+  <div class="modal" tabindex="-1" role="dialog" id="mostrarmodal">
+    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="btnClose">
+            <span aria-hidden="true" id="laX">&times;</span>
+    </button>
+    <div class="modal-dialog" role="document" id="modalDialog">
+      <!-- <div class="modal-content"> -->
+        <div class="modal-header">
+
+    
+          <h5 class="modal-title" id="textShadow">Utilizar mascarilla, salva vidas!</h5>
+
+        </div>
+        <img src="/asset/image/covid-19-cartel-icono-virus_1142-7401.png" alt="" id="icoCovid">
+        <div class="modal-body" id="modalBody">
+          <p id="textShadow">Para evitar la propagación de la <b>COVID-19:</b></p>
+
+
+          <ul id="textShadow">
+            <li>Mantén una distancia de seguridad con personas que tosan o estornuden.</li>
+            <li>Utiliza mascarilla cuando no sea posible mantener el distanciamiento físico.</li>
+            <li>No te toques los ojos, la nariz ni la boca.</li>
+            <li>Si no te encuentras bien, quédate en casa.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ================
             navBar
   ==================== -->
-  <header id="headers" >
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <header  id="headers">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html"><img src="/asset/logo/logo-centro.png" width="70px" height="70px" alt="logo"> </a>
+        <a class="navbar-brand" href="/index.html"><img src="/asset/logo/logo-centro.png" width="80px" height="80px" alt="logo"> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor03" >
+        <div class="collapse navbar-collapse" id="navbarColor03">
           <ul class="navbar-nav me-auto">
-            <li class="nav-item btn btn-primary" >
-              <a class="nav-link active" href="/index.html" >Inicio
+            <li class="nav-item btn btn-primary">
+              <a class="nav-link active" href="/index.html">Inicio
                 <span class="visually-hidden">(current)</span>
               </a>
             </li>
@@ -117,12 +148,10 @@
                   Entrar con Google
                 </button>
                 </div>
-                
               </form>
 
-              <p><a href="/Secciones/recup.html">Recuperar la contraseña</a></p>
+                    <p><a href="/Secciones/recup.html">Crear Cuenta</a></p>
             </div>
-            
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
@@ -131,9 +160,9 @@
       </div> 
 
           <!-- ================
-                    Registrar         
+                    Recuperar Contraseña         
           ==================== -->
-            <a type="button" data-bs-toggle="modal" data-bs-target="#registrarModal" class="btn btn-outline-danger mr-1 border border-dark" data-bs-whatever="@mdo" id="ButtomReg">Regístrate</a>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#registrarModal" class="btn btn-outline-info mr-1 border border-dark" data-bs-whatever="@mdo" id="ButtomReg">Recuperar Contraseña</a>
             <div class="modal fade" id="registrarModal" tabindex="-1" aria-labelledby="registrarModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -142,35 +171,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <form>
-                      <div class="row">
-                        <div class="col">
-                          <label for="registrarInputEmail1" class="form-label">Nombre</label>
-                          <input type="text" class="form-control" placeholder="Nombre">
-                        </div>
-                        <div class="col">
-                          <label for="registrarInputEmail1" class="form-label">Apellido</label>
-                          <input type="text" class="form-control" placeholder="Apellido">
-                        </div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="registrarInputEmail1" class="form-label">Direccion de E-Mail</label>
-                        <input type="email" class="form-control" id="registrarInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más. </div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="registrarInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="registrarInputPassword1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="registrarInputPassword1" class="form-label">Confirmar contraseña</label>
-                        <input type="password" class="form-control" id="registrarInputPassword1">
-                      </div>
-                      <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="registrarCheck1">
-                        <label class="form-check-label" for="registrarCheck1">Aceptar términos y condiciones</label>
-                      </div>
-                      <button type="submit" class="btn btn-primary">registrarse</button>
+                    <form class="form-signin panel center-block " role="form">
+                      <h4 class="form-signin-heading siginsubTitl text-center">Por favor, escribe tu email </h4>
+                      <input type="email" class="form-control" placeholder="Correo electrónico" required autofocus>
+                      <button class="btn btn-lg btn-primary btn-block btnRecPass" type="submit">Recuperar contraseña</button>
+                      
                     </form>
                   </div>
                   <div class="modal-footer">

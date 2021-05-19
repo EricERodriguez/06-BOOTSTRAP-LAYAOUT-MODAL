@@ -150,7 +150,7 @@
                 </div>
               </form>
 
-                    <p><a href="/Secciones/recup.html">Recuperar la contraseña</a></p>
+                    <p><a href="/Secciones/recup.html">Crear Cuenta</a></p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -160,9 +160,9 @@
       </div> 
 
           <!-- ================
-                    Registrar         
+                    Recuperar Contraseña         
           ==================== -->
-            <a type="button" data-bs-toggle="modal" data-bs-target="#registrarModal" class="btn btn-outline-danger mr-1 border border-dark" data-bs-whatever="@mdo" id="ButtomReg">Regístrate</a>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#registrarModal" class="btn btn-outline-info mr-1 border border-dark" data-bs-whatever="@mdo" id="ButtomReg">Recuperar Contraseña</a>
             <div class="modal fade" id="registrarModal" tabindex="-1" aria-labelledby="registrarModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -171,35 +171,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <form>
-                      <div class="row">
-                        <div class="col">
-                          <label for="registrarInputEmail1" class="form-label">Nombre</label>
-                          <input type="text" class="form-control" placeholder="Nombre">
-                        </div>
-                        <div class="col">
-                          <label for="registrarInputEmail1" class="form-label">Apellido</label>
-                          <input type="text" class="form-control" placeholder="Apellido">
-                        </div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="registrarInputEmail1" class="form-label">Direccion de E-Mail</label>
-                        <input type="email" class="form-control" id="registrarInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más. </div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="registrarInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="registrarInputPassword1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="registrarInputPassword1" class="form-label">Confirmar contraseña</label>
-                        <input type="password" class="form-control" id="registrarInputPassword1">
-                      </div>
-                      <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="registrarCheck1">
-                        <label class="form-check-label" for="registrarCheck1">Aceptar términos y condiciones</label>
-                      </div>
-                      <button type="submit" class="btn btn-primary">registrarse</button>
+                    <form class="form-signin panel center-block " role="form">
+                      <h4 class="form-signin-heading siginsubTitl text-center">Por favor, escribe tu email </h4>
+                      <input type="email" class="form-control" placeholder="Correo electrónico" required autofocus>
+                      <button class="btn btn-lg btn-primary btn-block btnRecPass" type="submit">Recuperar contraseña</button>
+                      
                     </form>
                   </div>
                   <div class="modal-footer">
