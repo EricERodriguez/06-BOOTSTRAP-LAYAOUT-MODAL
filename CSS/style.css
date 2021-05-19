@@ -12,6 +12,40 @@
     top: 0;
     z-index: 10000;
 }
+.nav-item {
+    border-radius: 0% !important;
+    color: red;
+}
+.navbar-nav:hover{
+    box-shadow: 1px 1px 10px rgba(255, 0, 0, 0.349);
+    color: red;
+}
+.nav-link{
+    font-size: larger;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: #0077ff !important;
+    text-shadow: 4px 4px 40px rgb(33, 193, 233);
+}
+.navbar-nav:hover {
+    background-color: red;
+}
+.navbar-brand{
+    height: -100px;
+    padding-top: 0px;
+}
+.navbar-brand:hover {
+    filter: drop-shadow(0 2px 6px rgba(255, 10, 10, 0.527)); 
+}
+
+
+#ButtomIng:hover{
+    filter: drop-shadow(0 2px 6px rgba(255, 10, 10, 0.527)); 
+}
+#ButtomReg:hover{
+    filter: drop-shadow(0 2px 6px rgba(10, 137, 255, 0.527)); 
+}
 
 
 /*------------------
@@ -186,6 +220,9 @@
     bottom: 20px;
     right: 20px;
 }
+.whatsapp:hover{
+    filter: drop-shadow(0 2px 10px rgba(8, 238, 0, 0.589)); 
+}
 
 /*------------------
 /*--------Pagina error 404---------
@@ -309,6 +346,7 @@ tbody{
     font-size: small;
     padding: 2px;
     margin: 4px;
+    text-shadow: 4px 4px 10px white;
 }
 
 
@@ -317,8 +355,9 @@ tbody{
 ------------------*/
 @media screen and (min-width: 550px) {
     #mostrarmodal {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         background: rgb(0,194,194);
-        background: linear-gradient(41deg, rgba(0,194,194,1) 32%, rgba(138,229,255,0.8410714627647934) 100%);
+        background: linear-gradient(41deg, rgb(238, 243, 243) 32%, rgba(138,229,255,0.8410714627647934) 100%);
     }
 }
 @media screen and (max-width: 550px){
