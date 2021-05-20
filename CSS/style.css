@@ -442,6 +442,13 @@ tbody{
         background: linear-gradient(41deg, rgb(238, 243, 243) 32%, rgba(138,229,255,0.8410714627647934) 100%);
     }
 }
+
+@media screen and (max-width: 768px){
+    #imagenmaschica {
+        height: 170px;
+        width: 270px;
+    }
+}
 @media screen and (max-width: 550px){
     #modalBody{
         display:none;
