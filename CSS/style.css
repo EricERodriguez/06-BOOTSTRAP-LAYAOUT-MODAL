@@ -430,6 +430,9 @@ tbody{
     margin: 4px;
     text-shadow: 4px 4px 10px white;
 }
+#imagentarjetas{
+    border-radius: 4%;
+}
 
 
 /*------------------
