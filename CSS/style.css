@@ -116,6 +116,75 @@
   }
   
 /*------------------
+/*--------Home---------
+------------------*/
+
+
+#carrouselhome {
+    height: 700px;
+    object-fit: cover;
+
+}
+
+#carouselExampleCaptionshome{
+    position: relative;
+}
+
+/* iframe{
+    width: 500px;
+    height: 500px;
+} */
+
+/* hr {
+    border-top: 3px solid red ;
+    opacity: 1 !important;
+    margin: 0px !important;
+} */
+
+#seguidor {
+    top: 100px;
+
+}
+
+/* .col .p-1 {
+    color: red;
+    background-color: red;
+} */
+#smile {
+    color: #0084ff;
+}
+#smile:hover {
+    color: red;
+    filter: drop-shadow(0 2px 6px rgba(255, 120, 10, 0.527));
+    zoom: 1.2;
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+}
+
+
+
+#hover:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/*     
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+} */
+
+.categorias:hover {
+    background-color:#dfdbfb;
+}
+
+/*------------------
 /*--------About US---------
 ------------------*/
 #mostrarmodal {

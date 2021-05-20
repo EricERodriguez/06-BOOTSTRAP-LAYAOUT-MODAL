@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+        <!-- ================
+              fas fa ico         
+    ==================== -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <!-- ================
+                    favicon
+          ==================== -->
+
+          <link rel="shortcut icon" href="/asset/logo/Logo.png">
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- ================
+            navBar
+  ==================== -->
+  <header  id="headers">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><img src="/asset/logo/logo-centro.png" width="80px" height="80px" alt="logo"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item btn btn-primary">
+              <a class="nav-link active" href="/index.html">Inicio
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item btn btn-primary">
+              <a class="nav-link" href="/Secciones/Cartilla de prestadores.html">Cartilla</a>
+            </li>
+            <li class="nav-item btn btn-primary">
+              <a class="nav-link" href="/Secciones/AboutUs.html">Acerca de</a>
+            </li>
+            <li class="nav-item btn btn-primary">
+              <a class="nav-link" href="/Secciones/Noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item btn btn-primary">
+              <a class="nav-link" href="/Secciones/contact.html">Contacto</a>
+            </li>
+          </ul>
+          <div class="m-2 d-flex flex-row justify-content-around">
+
+            <!-- ================
+                      ingresar         
+            ==================== -->
+      <button type="button" class="btn btn-outline-danger mr-1 border border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" id="ButtomIng">Ingresar</button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Centro Medico - RollingCode</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Direccion de E-Mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más. </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Recordad E-mail</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+                <div>
+                  <button class="loginBtn loginBtn--facebook">
+                  Entrar con Facebook
+                </button>
+                <button class="loginBtn loginBtn--google">
+                  Entrar con Google
+                </button>
+                </div>
+              </form>
+
+                    <p><a href="/Secciones/recup.html">Crear Cuenta</a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+          <!-- ================
+                    Recuperar Contraseña         
+          ==================== -->
+            <a type="button" data-bs-toggle="modal" data-bs-target="#registrarModal" class="btn btn-outline-info mr-1 border border-dark" data-bs-whatever="@mdo" id="ButtomReg">Recuperar Contraseña</a>
+            <div class="modal fade" id="registrarModal" tabindex="-1" aria-labelledby="registrarModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="registrarModalLabel">Centro Medico - RollingCode</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-signin panel center-block " role="form">
+                      <h4 class="form-signin-heading siginsubTitl text-center">Por favor, escribe tu email </h4>
+                      <input type="email" class="form-control" placeholder="Correo electrónico" required autofocus>
+                      <button class="btn btn-lg btn-primary btn-block btnRecPass" type="submit">Recuperar contraseña</button>
+                      
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+    <!-- ===========================================
+              SECCION header end							
+    ============================================ -->
+    <!-- ===========================================
+                    SECCION main							
+    ============================================ -->
+    <main>
+        <div>
+            <img src="../assets/infogral-logo.jpg.crdownload" height="500px" width="100%" alt="">
+        </div>
+            <!-- ===========================================
+                SECCION seguidor							
+            ============================================ -->
+
+        <nav class="sticky-top sticky-breadcrumbs " style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" id="seguidor">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active"><a href="../index.html" class="text-decoration-none">Inicio</a></li>
+              <li class="breadcrumb-item active"><a href="#" class="text-decoration-none">Informacion General (COVID-19)</a></li>
+            </ol>
+          </nav>
+            <!-- ===========================================
+                SECCION seguidor end	
+            ============================================ -->
+        <section class="container my-3 justify-content-center"> 
+            <!-- ===========================================
+                SECCION TEMA PRINCIPAL							
+            ============================================ -->
+    
+                <article class="p-3">
+                    <h3>Informacion eneral sobre COVID-19</h3>
+                    <p>En esta seccion vamos a ver la informacio mas relevante y al mismo tiempo interesante. Acompañanos!.</p>
+                    <hr style="border-top: 3px solid grey;">
+                </article>
+            <!-- ===========================================
+                SECCION TEMA PRINCIPAL	end						
+            ============================================ -->
+            <!-- ===========================================
+                    SECCION SUB DIVISOINES TEMA							
+            ============================================ -->
+            <article class="row p-1 m-lg-1 shadow" >
+                <div class="col p-5 m-4">
+                    <h4>El mundo</h4>
+                    <p>En este mapa podemos ver los paises mas afectados y menos del mundo</p>
+                    <img src="../assets/infogral-logo.jpg" width="100%" alt="">
+                </div>
+            </article>
+            <article class="row p-1 m-lg-1 shadow" >
+                <div class="col p-5 m-4">
+                    <h4>Pero... ¿Como podemos cudarnos?</h4>
+                    <div class="container justify-content-center">
+                        <div class="row">
+                            <div class="col p-3 m-2" id="hover">
+                            <ul>
+                                <li>Use mascarilla</li>
+                                <li>Mantenga una distancia de 6 pies de los demás</li>
+                                <li>Vacúnese</li>
+                                <li>Evite las grandes aglomeraciones y los espacios mal ventilados</li>
+                            </ul>
+                            </div>
+                            <div class="col p-3 m-2" id="hover">
+                                <ul>
+                                    <li>Lavarse las manos frecuentemente</li>
+                                    <li>Cúbrase la nariz y la boca al toser y estornudar</li>
+                                    <li>Limpie y desinfecte</li>
+                                    <li>Monitoree su salud todos los días</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </article>
+              <article class="row p-1 m-lg-1 shadow" >
+                <div class="col p-5 m-4">
+                    <h4>¿Que tan efefctiva es la vacuna contra el COVID-19?</h4>
+                    <p>Hay muchas vacunas existentes al dia de hoy, acontinuacion las mas conocidad, y eficaces.</p>
+                    <div class="input-label">
+                        <p>
+                            <label>Novavax</label> <br>
+                            <div>
+                                <div class="text-center" style="background-color: red; color: black; width: 96%;">96,0%</div>
+                            </div>
+                            <br>
+                        </p>
+                        <p>
+                            <label for="">Comirnaty</label><br>
+                            <div>
+                                <div class="text-center" style="background-color: red; color: black; width: 95%;">95,0%</div>
+                            </div>
+                            <br>
+                        </p>
+                        <p>
+                            <label for="">Sputnik </label><br>
+                            <div>
+                                <div class="text-center" style="background-color: red; color: black; width: 91%;">91,6%</div>
+                            </div>
+                            <br>
+                        </p>
+                        <p>
+                            <label for="">Sinopharm</label> <br>
+                            <div>
+                                <div class="text-center" style="background-color: red; color: black; width: 79%;">79,0%</div>
+                            </div>
+                            <br>
+                        </p>
+                        <p>
+                            <label for="">CoronaVac</label>
+                            <div>
+                                <div class="w-50 text-center" style="background-color: red; color: black;">50,6</div>
+                            </div>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- ===========================================
+                    SECCION SUBDIVISIONES end							
+            ============================================ -->
+          </section>
+    </main>
+    <!-- ===========================================
+                    SECCION main end							
+    ============================================ -->
+  <!-- ===========================================
+            SECCION FOOTER							
+  ============================================ -->
+
+
+        <!-- ================
+                  Script para que se abra el boton de ingresar
+        ==================== -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </body>
+  
+      <footer class="mt-5 bg-dark py-2 text-light">
+        <div class="row no-gutters">
+          <div class="col-sm-12 col-md-4 text-center pt-5">
+            <h5>Seguinos en:</h5>
+            <a href="/Secciones/error404.html"><i class="fab fa-linkedin"></i></a>
+            <a href="/Secciones/error404.html"><i class="fab fa-facebook"></i></a>
+            <a href="/Secciones/error404.html"><i class="fab fa-instagram"></i></a>
+            <a href="/Secciones/error404.html"><i class="fab fa-whatsapp"></i></a>
+          </div>
+
+          <div class="col-sm-12 col-md-4 text-center pt-1">
+            <img src="/asset/logo/Logo.png"  width="150px" height="150px">
+            <p>RollingCode</p>
+            <hr>
+          </div>
+          <div class="container col-sm-12 col-md-4 text-center pt-5">
+            <ul class="pr-5">
+              <h5>Unite a nosotros!</h5>
+              <form action="actions/email.php" method="POST">
+                <div>
+                  <input class="my-2" type="email" placeholder="name@example.com" name="email" required="">
+                  <button type="submit" class="btn-success" style="background-color: rgba(0, 255, 255, 0.644);">Enviar</button>
+                </div>
+              </form>
+              <p class="p-3">Dejanos tu mail, asi podemos avisarte de todas las noticias</p>
+            </ul>
+          </div>
+        </div>
+        <div class="row text-center no-gutters">
+          <div class="col-sm-12">
+            <p>&copy;All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+  
+  </html>
