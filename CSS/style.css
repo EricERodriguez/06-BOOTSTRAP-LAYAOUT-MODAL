@@ -47,7 +47,7 @@
     filter: drop-shadow(0 2px 6px rgba(10, 137, 255, 0.527)); 
 }
 
-#hover:hover{
+#hovers:hover{
     -webkit-transform:scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
